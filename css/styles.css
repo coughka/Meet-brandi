@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 
@@ -21,22 +21,35 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  letter-spacing:1.4;
 }
 
-h2 {font-size: 3.375rem;}
+h2 {
+    font-size: 4rem;
+    font-weight:300;
+}
 
 .brandi {
     font-weight: 700;
 }
 
-h3 {font-size: 2.25rem;}
+h3 {
+    font-size: 3rem;
+    font-weight:300;
+}
 
 .creaive {
     color:hsl(156, 100%, 50%);
 }
 
-h4 {font-size: 1.5rem;}
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size:0.8rem;
+}
 
 small, .font_small {font-size: 0.667rem;}
 
@@ -70,9 +83,10 @@ nav {
 }
 
 nav a {
-    margin-right:0.5rem;
+    margin-right:0.8rem;
     text-decoration:none;
     color:rgba(255,255,255,0.75);
+    font-size:0.8rem;
 }
 
 .jumberton {
@@ -92,10 +106,20 @@ nav a {
     grid-column:span 12;
 }
 
+.jumberton-block h4 {
+    margin-top:1.5rem;
+}
+
+.brandi {
+    font-weight:700;
+}
+
 .jumberton a {
     color:rgba(255,255,255,0.75);
     margin-right:0.25rem;
 }
+
+/*FEATURES*/
 
 section {
     padding:5vh 0;
@@ -105,7 +129,6 @@ section {
     width:80%;
     margin:5vh auto;
     grid-column:span 12;
-
 }
 
 .title {
@@ -114,14 +137,20 @@ section {
     position:relative;
 
     font-family: "Open Sans",sans-serif;
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 1.75rem;
+    font-weight: 700;
     text-transform: uppercase;
+    color:hsl(165, 100%, 40%);
+    font-weight:800;
+}
 
+.title h3 {
+    font-weight:800;
 }
 
 .title i {
     color:rgba(0,0,0,0.25);
+    font-size:0.8rem;
 }
 
 /*.title i::before {
@@ -143,19 +172,15 @@ section {
 }*/
 
 
-.features-content h3 {
-    color:hsl(165, 100%, 40%);
-    font-weight:800;
-}
-
 .features-block {
     display:grid;
     grid-template-columns: 1fr 5fr;
     align-items:start;
 }
 
-.features-block figure {
-    border:1px solid rgba(0,0,0,0.25);
+.features-block i {
+    border:1px solid hsla(165, 100%, 40%, 1);
+    color:hsla(165, 100%, 40%, 1);
     width:1rem;
     height:1rem;
     padding:1rem;
@@ -168,12 +193,23 @@ section {
     font-weight:900;
 }
 
+.text-block {
+    margin-right:1rem;
+}
+
+/*WORK*/
+
 .work-block {
     grid-column:span 12;
 }
 
+.disclaimer p {
+    font-size:1.1rem;
+    color: hsla(205, 79%, 11%,0.8);
+}
+
 .work-content {
-    width:100%;
+    width:75%;
     text-align:center;
 }
 
@@ -193,8 +229,9 @@ section {
     background-color: #0eb493;
     color:white;
     border-radius:1rem;
-
 }
+
+/*Gallery*/
 
 .gallery-content figure {
     grid-column:span 3;
@@ -391,5 +428,4 @@ ul li {
 
 ul {
     padding:0;
-    columns:2;
 }
